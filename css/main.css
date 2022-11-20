@@ -1,0 +1,36 @@
+header .container {
+  max-width: 1294px;
+}
+header .container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+header .container .navbar .header_icon {
+  display: flex;
+}
+header .container .navbar .header_icon li {
+  list-style: none;
+  margin-right: 25px;
+  padding-top: 15px;
+}
+
+.dropdown-menu .dropdown-item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
