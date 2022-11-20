@@ -40,3 +40,87 @@ header{
   }
 }
 
+.new_phones {
+  .container {
+    max-width: 1294px;
+    padding-top: 28px;
+    margin: auto;
+    .carousel-inner {
+      .carousel-item {
+        padding: 145px 0 127px;
+        background: #DCE5E2;
+        border-radius: 32px;
+        padding-left: 56px;
+        position: relative;
+        h1{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 58px;
+          line-height: 70px;
+          color: #000000;
+          margin-bottom: 19px;
+        }
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+          max-width: 565px;
+          margin-bottom: 44px;
+        }
+        a{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: capitalize;
+          color: #000000;
+          padding: 14px 53px;
+          border: 1px solid #000000;
+          border-radius: 200px;
+          transition: 0.5s;
+          &:hover{
+            background: black;
+            color: white;
+            text-decoration: none;
+          }
+        }
+        img{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+.carousel-control-prev {
+  left: 19px;
+  width: 15px;
+}
+.carousel-control-next {
+  right: 19px;
+  width: 15px;
+}
+.carousel-control-next-icon {
+  background-image: url("../img/arrow_r.svg");
+}
+.carousel-control-prev-icon {
+  background-image: url("../img/arrow_l.svg");
+}
+.carousel-indicators{
+  li {
+    width: 194px;
+    height: 2px;
+    background-color: black;
+    margin: 0 17px;
+  }
+}
+
+.offers{
+  padding: 75px 0 100px;
+}
