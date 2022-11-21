@@ -1,6 +1,37 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+h2{
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 9px;
+}
+
+p{
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.container{
+  max-width: 1294px;
+}
+
 header{
   .container{
-    max-width: 1294px;
     .navbar{
       display: flex;
       justify-content: space-between;
@@ -42,7 +73,6 @@ header{
 
 .new_phones {
   .container {
-    max-width: 1294px;
     padding-top: 28px;
     margin: auto;
     .carousel-inner {
@@ -122,39 +152,42 @@ header{
 }
 
 .offers{
-  padding: 75px 0 100px;
+  padding: 75px 0 50px;
   margin: auto;
   .container{
-    max-width: 1294px;
-    h2{
-      font-family: 'Readex Pro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 42px;
-      line-height: 52px;
-      color: #000000;
-    }
-    p{
-      font-family: 'Readex Pro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #000000;
-    }
+    box-sizing: content-box;
     .categoties{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include max-screen(1318px){
+        padding-right: 30px;
+        justify-content: space-around;
+      }
       .laptop-watch{
         .laptops{
-          min-width: 639px;
+          width: 639px;
           height: 472px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
           position: relative;
-          margin-bottom: 62px;
+          margin-bottom: 50px;
+          transition: 0.5s;
+          &:hover{
+            transform: scale(1.05);
+          }
+          @include max-screen(638px){
+            max-width: 639px;
+            width: 100%;
+          }
           img{
             position: absolute;
             top: 0;
             left: 42px;
-            //width: 100%;
+            @include max-screen(638px){
+              position: relative;
+              width: 100%;
+              left: 0;
+            }
           }
           p{
             font-family: 'Readex Pro';
@@ -177,13 +210,230 @@ header{
               display: block;
             }
           }
-          .watch{
-            min-width: 639px;
-            height: 270px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
-            position: relative;
+        }
+        .watch{
+          width: 639px;
+          height: 270px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+          position: relative;
+          margin-bottom: 50px;
+          transition: 0.5s;
+          @include max-screen(638px){
+            max-width: 639px;
+            width: 100%;
+          }
+          &:hover{
+            transform: scale(1.05);
+          }
+          img{
+            position: absolute;
+            top: 0;
+            left: 42px;
+            @include max-screen(638px){
+              position: relative;
+              left: 0;
+              bottom: 0;
+            }
+          }
+          p{
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            position: absolute;
+            bottom: 77px;
+            right: 42px;
+            span{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 19px;
+              color: #000000;
+              display: block;
+            }
           }
         }
+      }
+      .phones{
+        min-width: 312px;
+        height: 792px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+        position: relative;
+        margin-bottom: 50px;
+        transition: 0.5s;
+        @include max-screen(638px){
+          width: 100%;
+        }
+        &:hover{
+          transform: scale(1.05);
+        }
+        img{
+          position: absolute;
+          top: 144px;
+          right: 0;
+        }
+        p{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          color: #000000;
+          position: absolute;
+          bottom: 144px;
+          right: 31px;
+          span{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: #000000;
+            display: block;
+          }
+        }
+      }
+      .tablet{
+        min-width: 312px;
+        height: 792px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+        position: relative;
+        transition: 0.5s;
+        @include max-screen(638px){
+          width: 100%;
+        }
+        &:hover{
+          transform: scale(1.05);
+        }
+        img{
+          position: absolute;
+          bottom: 115px;
+          right: 0;
+        }
+        p{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          color: #000000;
+          position: absolute;
+          top: 114px;
+          right: 40px;
+          span{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: #000000;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.selled {
+  padding: 50px 0;
+  .shopcards {
+    .card {
+      width: 300px;
+      border: none;
+
+      .card-body {
+        padding: 0 41px 0 0;
+
+        .card-title {
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          color: #000000;
+          text-align: start;
+          margin-bottom: 9px;
+        }
+
+        .card-text {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: start;
+          color: #4B4B4B;
+          margin-bottom: 8px;
+        }
+
+        .card-price {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: start;
+          color: #000000;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}
+.around{
+  .describe{
+    .product{
+      background: #F8F9FA;
+      border-radius: 16px;
+      max-width: 413px;
+      height: 453px;
+      position: relative;
+      img{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.place {
+  padding: 47px 0 24px;
+  .row {
+    @include max-screen(834px) {
+      display: block;
+      justify-content: center;
+    }
+    @include max-screen(767px) {
+      display: block;
+    }
+    .place-image {
+      width: 100%;
+      position: relative;
+      background-image: url("../img/book.png");
+      height: 420px;
+      background-size: cover;
+      border-radius: 16px;
+    }
+
+    .place-text {
+      h5 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 28px;
       }
     }
   }
