@@ -384,16 +384,79 @@ header .container .navbar .header_icon li {
   max-width: 413px;
   height: 453px;
   position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-top: 41px;
 }
 .around .describe .product img {
   position: absolute;
-  width: 100%;
   bottom: 0;
-  right: 0;
+  right: 29px;
+}
+@media screen and (max-width: 414px) {
+  .around .describe .product img {
+    right: 10px;
+  }
+}
+.around .describe .product:first-of-type img {
+  right: 77px;
+}
+@media screen and (max-width: 414px) {
+  .around .describe .product:first-of-type img {
+    right: 50px;
+  }
+}
+.around .describe .product:nth-child(2) img {
+  right: 60px;
+}
+@media screen and (max-width: 414px) {
+  .around .describe .product:nth-child(2) img {
+    right: 40px;
+  }
+}
+.around .describe .product .description h4 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #000000;
+  margin-bottom: 44px;
+}
+.around .describe .product .description h4 span {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  display: block;
+}
+.around .describe .product .description a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  padding: 14px 63px;
+  transition: 0.5s;
+}
+.around .describe .product .description a:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
 }
 
 .place {
   padding: 47px 0 24px;
+}
+.place .row {
+  margin-bottom: 73px;
 }
 @media screen and (max-width: 834px) {
   .place .row {
@@ -413,6 +476,7 @@ header .container .navbar .header_icon li {
   height: 420px;
   background-size: cover;
   border-radius: 16px;
+  margin-bottom: 20px;
 }
 .place .row .place-text h5 {
   font-family: "Inter";
@@ -422,6 +486,120 @@ header .container .navbar .header_icon li {
   line-height: 30px;
   color: #000000;
   margin-bottom: 28px;
+}
+.place a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.place a:after {
+  content: url("../img/ARROW.svg");
+  position: relative;
+  top: 6px;
+}
+
+.looking {
+  padding: 51px 0 19px;
+}
+.looking form {
+  text-align: center;
+  margin-top: 24px;
+}
+.looking form button {
+  background-image: url("../img/search_ico.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  position: relative;
+  top: 8px;
+  right: -52px;
+}
+@media screen and (max-width: 428px) {
+  .looking form button {
+    top: 51px;
+    right: 165px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .looking form button {
+    top: 51px;
+    right: 147px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .looking form button {
+    top: 51px;
+    right: 135px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .looking form button {
+    top: 51px;
+    right: 120px;
+  }
+}
+.looking form label {
+  display: none;
+}
+.looking form input {
+  max-width: 650px;
+  height: 60px;
+  width: 100%;
+  padding: 20px 20px 21px 67px;
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+.looking .keywords {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 68px;
+}
+.looking .keywords a {
+  display: inline-block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 200px;
+  padding: 12px 22px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  transition: 0.5s;
+}
+.looking .keywords a:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+.looking .thing {
+  max-width: 935px;
+  margin: auto;
+  width: 100%;
+  background: #DCE5E2;
+  border-radius: 16px;
+  padding: 47px 0 43px;
+}
+.looking .thing p {
+  margin-bottom: 9px;
 }
 
 /*# sourceMappingURL=main.css.map */
