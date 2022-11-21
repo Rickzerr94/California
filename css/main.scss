@@ -230,9 +230,10 @@ header{
             top: 0;
             left: 42px;
             @include max-screen(638px){
-              position: relative;
+              max-width: 639px;
+              width: 100%;
+              height: 100%;
               left: 0;
-              bottom: 0;
             }
           }
           p{
