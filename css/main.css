@@ -139,9 +139,6 @@ header .container .navbar .header_icon li {
   padding: 75px 0 50px;
   margin: auto;
 }
-.offers .container {
-  box-sizing: content-box;
-}
 .offers .container .categoties {
   display: flex;
   justify-content: space-between;
@@ -149,7 +146,6 @@ header .container .navbar .header_icon li {
 }
 @media screen and (max-width: 1318px) {
   .offers .container .categoties {
-    padding-right: 30px;
     justify-content: space-around;
   }
 }

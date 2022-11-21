@@ -155,13 +155,11 @@ header{
   padding: 75px 0 50px;
   margin: auto;
   .container{
-    box-sizing: content-box;
     .categoties{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       @include max-screen(1318px){
-        padding-right: 30px;
         justify-content: space-around;
       }
       .laptop-watch{
