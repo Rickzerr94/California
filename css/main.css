@@ -115,6 +115,65 @@ header .container .navbar .header_icon li {
 
 .offers {
   padding: 75px 0 100px;
+  margin: auto;
+}
+.offers .container {
+  max-width: 1294px;
+}
+.offers .container h2 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
+}
+.offers .container p {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.offers .container .categoties .laptop-watch .laptops {
+  min-width: 639px;
+  height: 472px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+  position: relative;
+  margin-bottom: 62px;
+}
+.offers .container .categoties .laptop-watch .laptops img {
+  position: absolute;
+  top: 0;
+  left: 42px;
+}
+.offers .container .categoties .laptop-watch .laptops p {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  position: absolute;
+  bottom: -20px;
+  right: 42px;
+}
+.offers .container .categoties .laptop-watch .laptops p span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+  display: block;
+}
+.offers .container .categoties .laptop-watch .laptops .watch {
+  min-width: 639px;
+  height: 270px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

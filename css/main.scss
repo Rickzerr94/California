@@ -123,4 +123,68 @@ header{
 
 .offers{
   padding: 75px 0 100px;
+  margin: auto;
+  .container{
+    max-width: 1294px;
+    h2{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: #000000;
+    }
+    p{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+    .categoties{
+      .laptop-watch{
+        .laptops{
+          min-width: 639px;
+          height: 472px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+          position: relative;
+          margin-bottom: 62px;
+          img{
+            position: absolute;
+            top: 0;
+            left: 42px;
+            //width: 100%;
+          }
+          p{
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            position: absolute;
+            bottom: -20px;
+            right: 42px;
+            span{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 19px;
+              color: #000000;
+              display: block;
+            }
+          }
+          .watch{
+            min-width: 639px;
+            height: 270px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
 }
