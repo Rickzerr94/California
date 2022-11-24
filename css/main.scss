@@ -82,6 +82,13 @@ header{
         border-radius: 32px;
         padding-left: 56px;
         position: relative;
+        @include max-screen(834px){
+          padding-left: 15px;
+          height: 100vh;
+        }
+        @include max-screen(428px){
+          padding: 50px 0;
+        }
         h1{
           font-family: 'Readex Pro';
           font-style: normal;
@@ -123,6 +130,13 @@ header{
           position: absolute;
           bottom: 0;
           right: 0;
+          @include max-screen(1178px){
+            position: relative;
+            bottom: -90px;
+          }
+          @include max-screen(423px){
+            width: 100%;
+          }
         }
       }
     }
@@ -155,6 +169,12 @@ header{
   padding: 75px 0 50px;
   margin: auto;
   .container{
+    padding-right: 0;
+    padding-left: 0;
+    @include max-screen(834px){
+      padding-right: 15px;
+      padding-left: 15px;
+    }
     .categoties{
       display: flex;
       justify-content: space-between;
@@ -286,6 +306,7 @@ header{
           position: absolute;
           bottom: 144px;
           right: 31px;
+          margin-bottom: 0;
           span{
             font-family: 'Inter';
             font-style: normal;
@@ -600,9 +621,152 @@ header{
     width: 100%;
     background: #DCE5E2;
     border-radius: 16px;
-    padding: 47px 0 43px;
+    padding: 47px 10px 43px;
     p{
       margin-bottom: 9px;
+    }
+    form{
+      max-width: 400px;
+      width: 100%;
+      height: 50px;
+      background: #DCE5E2;
+      border: 1px solid #000000;
+      border-radius: 54px;
+      display: flex;
+      margin: auto;
+
+      input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: transparent;
+        padding: 16px 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        border-radius: 54px 0px 0px 54px;
+      }
+      button{
+        background-image: none;
+        background: #000000;
+        border-radius: 0px 25px 25px 0px;
+        width: 180px;
+        height: 50px;
+        position: static;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+footer{
+  padding: 44px 0 4px;
+  margin: auto;
+  .footer-content{
+    justify-content: space-between;
+    margin-bottom: 52px;
+    @include max-screen(834px){
+      justify-content: space-around;
+    }
+    &:after{
+      display: flex;
+      content: "";
+      background: #DCE5E2;
+      height: 2px;
+      width: 100%;
+      margin-top: 78px;
+    }
+    .california{
+      max-width: 394px;
+      width: 100%;
+      padding-top: 10px;
+      a{
+        img{
+          margin-bottom: 19px;
+        }
+      }
+      p{
+        text-align: start;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        max-width: 304px;
+      }
+    }
+    .products{
+      max-width: 197px;
+      width: 100%;
+      @include max-screen(834px){
+        margin-bottom: 50px;
+      }
+    }
+    .company{
+      max-width: 197px;
+      width: 100%;
+      @include max-screen(390px){
+        margin-bottom: 50px;
+      }
+    }
+    .support{
+      max-width: 197px;
+      width: 100%;
+      @include max-screen(390px){
+        margin-bottom: 50px;
+      }
+    }
+    .follow{
+      max-width: 197px;
+      width: 100%;
+      @include max-screen(390px){
+        margin-bottom: 50px;
+      }
+    }
+  }
+  h4{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 19px;
+  }
+  a{
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+      color: black;
+      transform: scale(1.1);
+      text-decoration: none;
+    }
+  }
+  .made{
+    a{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
     }
   }
 }

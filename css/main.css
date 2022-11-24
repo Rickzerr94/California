@@ -67,6 +67,17 @@ header .container .navbar .header_icon li {
   padding-left: 56px;
   position: relative;
 }
+@media screen and (max-width: 834px) {
+  .new_phones .container .carousel-inner .carousel-item {
+    padding-left: 15px;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 428px) {
+  .new_phones .container .carousel-inner .carousel-item {
+    padding: 50px 0;
+  }
+}
 .new_phones .container .carousel-inner .carousel-item h1 {
   font-family: "Readex Pro";
   font-style: normal;
@@ -109,6 +120,17 @@ header .container .navbar .header_icon li {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 1178px) {
+  .new_phones .container .carousel-inner .carousel-item img {
+    position: relative;
+    bottom: -90px;
+  }
+}
+@media screen and (max-width: 423px) {
+  .new_phones .container .carousel-inner .carousel-item img {
+    width: 100%;
+  }
+}
 
 .carousel-control-prev {
   left: 19px;
@@ -138,6 +160,16 @@ header .container .navbar .header_icon li {
 .offers {
   padding: 75px 0 50px;
   margin: auto;
+}
+.offers .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media screen and (max-width: 834px) {
+  .offers .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 .offers .container .categoties {
   display: flex;
@@ -282,6 +314,7 @@ header .container .navbar .header_icon li {
   position: absolute;
   bottom: 144px;
   right: 31px;
+  margin-bottom: 0;
 }
 .offers .container .categoties .phones p span {
   font-family: "Inter";
@@ -593,10 +626,159 @@ header .container .navbar .header_icon li {
   width: 100%;
   background: #DCE5E2;
   border-radius: 16px;
-  padding: 47px 0 43px;
+  padding: 47px 10px 43px;
 }
 .looking .thing p {
   margin-bottom: 9px;
+}
+.looking .thing form {
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  background: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px;
+  display: flex;
+  margin: auto;
+}
+.looking .thing form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding: 16px 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border-radius: 54px 0px 0px 54px;
+}
+.looking .thing form button {
+  background-image: none;
+  background: #000000;
+  border-radius: 0px 25px 25px 0px;
+  width: 180px;
+  height: 50px;
+  position: static;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 16px 32px;
+}
+
+footer {
+  padding: 44px 0 4px;
+  margin: auto;
+}
+footer .footer-content {
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+@media screen and (max-width: 834px) {
+  footer .footer-content {
+    justify-content: space-around;
+  }
+}
+footer .footer-content:after {
+  display: flex;
+  content: "";
+  background: #DCE5E2;
+  height: 2px;
+  width: 100%;
+  margin-top: 78px;
+}
+footer .footer-content .california {
+  max-width: 394px;
+  width: 100%;
+  padding-top: 10px;
+}
+footer .footer-content .california a img {
+  margin-bottom: 19px;
+}
+footer .footer-content .california p {
+  text-align: start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 304px;
+}
+footer .footer-content .products {
+  max-width: 197px;
+  width: 100%;
+}
+@media screen and (max-width: 834px) {
+  footer .footer-content .products {
+    margin-bottom: 50px;
+  }
+}
+footer .footer-content .company {
+  max-width: 197px;
+  width: 100%;
+}
+@media screen and (max-width: 390px) {
+  footer .footer-content .company {
+    margin-bottom: 50px;
+  }
+}
+footer .footer-content .support {
+  max-width: 197px;
+  width: 100%;
+}
+@media screen and (max-width: 390px) {
+  footer .footer-content .support {
+    margin-bottom: 50px;
+  }
+}
+footer .footer-content .follow {
+  max-width: 197px;
+  width: 100%;
+}
+@media screen and (max-width: 390px) {
+  footer .footer-content .follow {
+    margin-bottom: 50px;
+  }
+}
+footer h4 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+footer a {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: black;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+footer .made a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
