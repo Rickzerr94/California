@@ -780,5 +780,11 @@ footer .made a {
   line-height: 22px;
   color: #000000;
 }
+footer .made a:after {
+  content: url("../img/footer-arrow.svg");
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
 
 /*# sourceMappingURL=main.css.map */
