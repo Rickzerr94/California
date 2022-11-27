@@ -82,13 +82,13 @@
                 <img src="img/Iphones.png" alt="Iphones">
             </div>
             <div class="carousel-item">
-                <h1>The new phones are<br> here take a look.</h1>
+                <h2>The new phones are<br> here take a look.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
                 <a href="#">Explore</a>
                 <img src="img/Iphones.png" alt="Iphones">
             </div>
             <div class="carousel-item">
-                <h1>The new phones are<br> here take a look.</h1>
+                <h2>The new phones are<br> here take a look.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
                 <a href="#">Explore</a>
                 <img src="img/Iphones.png" alt="Iphones">
@@ -115,26 +115,26 @@
                 <div class="laptops">
                     <a href="#">
                         <img src="img/laptop.png" alt="laptop">
-                        <p><span>Laptops</span>True Laptop<br>Solution</p>
+                        <span class="span_head"><span>Laptops</span>True Laptop<br>Solution</span>
                     </a>
                 </div>
                 <div class="watch">
                     <a href="#">
                         <img src="img/watch.png" alt="watch">
-                        <p><span>Watch</span>Not just<br>stylisht</p>
+                        <span class="span_head"><span>Watch</span>Not just<br>stylisht</span>
                     </a>
                 </div>
             </div>
             <div class="phones">
                 <a href="#">
                     <img src="img/phones.png" alt="phones">
-                    <p><span>Phones</span>Your day to day<br>life</p>
+                    <span class="span_head"><span>Phones</span>Your day to day<br>life</span>
                 </a>
             </div>
             <div class="tablet">
                 <a href="#">
                     <img src="img/tablet.png" alt="tablet">
-                    <p><span>Tablet</span>Empower your<br>work</p>
+                    <span class="span_head"><span>Tablet</span>Empower your<br>work</span>
                 </a>
             </div>
         </div>
@@ -240,10 +240,12 @@
 <section class="looking">
     <div class="container">
         <h2>Looking for anything else?</h2>
-        <form name="search_form" action="#" method="post">
-            <button type="submit"></button>
-            <label for="search">Search keyword</label>
-            <input name="Search" type="search" placeholder="Search keyword" id="search">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputSearch"></label>
+                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search keyword" aria-label="Search">
+                <button type="submit" class="btn"></button>
+            </div>
         </form>
         <div class="keywords d-flex justify-content-center flex-wrap">
             <a href="#">iPhone</a>
@@ -262,10 +264,12 @@
             <div class="gadjet d-flex justify-content-center">
                 <img src="img/gadjets.png" alt="image">
             </div>
-            <form name="search_form" action="#" method="post">
-                <label for="email">Email</label>
-                <input name="email" type="email" placeholder="Your email" id="email">
-                <button type="submit">Sign up</button>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email" aria-describedby="emailHelp">
+                    <button type="submit" class="btn">Sign up</button>
+                </div>
             </form>
         </div>
     </div>
@@ -282,29 +286,65 @@
             </div>
             <div class="products">
                 <h4>All products</h4>
-                <a href="#">Phones</a>
-                <a href="#">Watch</a>
-                <a href="#">Tablet</a>
-                <a href="#">Laptops</a>
+                <ul>
+                    <li>
+                        <a href="#">Phones</a>
+                    </li>
+                    <li>
+                        <a href="#">Watch</a>
+                    </li>
+                    <li>
+                        <a href="#">Tablet</a>
+                    </li>
+                    <li>
+                        <a href="#">Laptops</a>
+                    </li>
+                </ul>
             </div>
             <div class="company">
                 <h4>Company</h4>
-                <a href="#">About</a>
-                <a href="#">Support</a>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
             </div>
             <div class="support">
                 <h4>Support</h4>
-                <a href="#">Style Guide</a>
-                <a href="#">Licensing</a>
-                <a href="#">Change Log</a>
-                <a href="#">Contact</a>
+                <ul>
+                    <li>
+                        <a href="#">Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="#">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#">Change Log</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
             <div class="follow">
                 <h4>Follow Us</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Youtube</a>
+                <ul>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="made d-flex justify-content-between">

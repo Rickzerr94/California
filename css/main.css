@@ -36,6 +36,8 @@ header .container .navbar .navbar-nav .nav-item .nav-link {
   line-height: 17px;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  margin: 0 18px;
 }
 header .container .navbar .header_icon {
   display: flex;
@@ -79,6 +81,15 @@ header .container .navbar .header_icon li {
   }
 }
 .new_phones .container .carousel-inner .carousel-item h1 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+.new_phones .container .carousel-inner .carousel-item h2 {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -198,6 +209,11 @@ header .container .navbar .header_icon li {
     width: 100%;
   }
 }
+@media screen and (max-width: 428px) {
+  .offers .container .categoties .laptop-watch .laptops {
+    height: 400px;
+  }
+}
 .offers .container .categoties .laptop-watch .laptops img {
   position: absolute;
   top: 0;
@@ -210,7 +226,7 @@ header .container .navbar .header_icon li {
     left: 0;
   }
 }
-.offers .container .categoties .laptop-watch .laptops p {
+.offers .container .categoties .laptop-watch .laptops .span_head {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -219,10 +235,10 @@ header .container .navbar .header_icon li {
   text-align: right;
   color: #000000;
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   right: 42px;
 }
-.offers .container .categoties .laptop-watch .laptops p span {
+.offers .container .categoties .laptop-watch .laptops .span_head span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -261,7 +277,7 @@ header .container .navbar .header_icon li {
     left: 0;
   }
 }
-.offers .container .categoties .laptop-watch .watch p {
+.offers .container .categoties .laptop-watch .watch .span_head {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -273,7 +289,12 @@ header .container .navbar .header_icon li {
   bottom: 77px;
   right: 42px;
 }
-.offers .container .categoties .laptop-watch .watch p span {
+@media screen and (max-width: 428px) {
+  .offers .container .categoties .laptop-watch .watch .span_head {
+    right: 35%;
+  }
+}
+.offers .container .categoties .laptop-watch .watch .span_head span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -303,7 +324,7 @@ header .container .navbar .header_icon li {
   top: 144px;
   right: 0;
 }
-.offers .container .categoties .phones p {
+.offers .container .categoties .phones .span_head {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -316,7 +337,7 @@ header .container .navbar .header_icon li {
   right: 31px;
   margin-bottom: 0;
 }
-.offers .container .categoties .phones p span {
+.offers .container .categoties .phones .span_head span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -345,7 +366,7 @@ header .container .navbar .header_icon li {
   bottom: 115px;
   right: 0;
 }
-.offers .container .categoties .tablet p {
+.offers .container .categoties .tablet .span_head {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -357,7 +378,7 @@ header .container .navbar .header_icon li {
   top: 114px;
   right: 40px;
 }
-.offers .container .categoties .tablet p span {
+.offers .container .categoties .tablet .span_head span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -497,6 +518,7 @@ header .container .navbar .header_icon li {
 @media screen and (max-width: 767px) {
   .place .row {
     display: block;
+    padding: 0 15px;
   }
 }
 .place .row .place-image {
@@ -535,63 +557,41 @@ header .container .navbar .header_icon li {
 .looking {
   padding: 51px 0 19px;
 }
-.looking form {
-  text-align: center;
-  margin-top: 24px;
+.looking .form-group {
+  margin: 24px auto 18px;
+  max-width: 650px;
+  height: 60px;
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
 }
-.looking form button {
+.looking .form-group .btn {
   background-image: url("../img/search_ico.svg");
   background-size: cover;
   width: 30px;
   height: 30px;
-  background-color: white;
+  background-color: transparent;
   border: none;
   position: relative;
-  top: 8px;
-  right: -52px;
+  top: -44px;
+  right: -15px;
 }
-@media screen and (max-width: 428px) {
-  .looking form button {
-    top: 51px;
-    right: 165px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .looking form button {
-    top: 51px;
-    right: 147px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .looking form button {
-    top: 51px;
-    right: 135px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .looking form button {
-    top: 51px;
-    right: 120px;
-  }
-}
-.looking form label {
+.looking .form-group label {
   display: none;
 }
-.looking form input {
-  max-width: 650px;
-  height: 60px;
+.looking .form-group input {
   width: 100%;
-  padding: 20px 20px 21px 67px;
-  background: #F8F9FA;
-  border: 1px solid #C5C5C5;
+  height: 100%;
+  border: none;
   border-radius: 100px;
+  background: transparent;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  margin-bottom: 18px;
+  padding-left: 67px;
 }
 .looking .keywords {
   max-width: 600px;
@@ -631,7 +631,7 @@ header .container .navbar .header_icon li {
 .looking .thing p {
   margin-bottom: 9px;
 }
-.looking .thing form {
+.looking .thing .form-group {
   max-width: 400px;
   width: 100%;
   height: 50px;
@@ -641,7 +641,7 @@ header .container .navbar .header_icon li {
   display: flex;
   margin: auto;
 }
-.looking .thing form input {
+.looking .thing .form-group .form-control {
   width: 100%;
   height: 100%;
   border: none;
@@ -655,12 +655,12 @@ header .container .navbar .header_icon li {
   color: #000000;
   border-radius: 54px 0px 0px 54px;
 }
-.looking .thing form button {
+.looking .thing .form-group .btn {
   background-image: none;
   background: #000000;
   border-radius: 0px 25px 25px 0px;
   width: 180px;
-  height: 50px;
+  height: 49px;
   position: static;
   font-family: "Inter";
   font-style: normal;
@@ -719,12 +719,18 @@ footer .footer-content .products {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 414px) {
+  footer .footer-content .products {
+    max-width: 150px;
+  }
+}
 footer .footer-content .company {
   max-width: 197px;
   width: 100%;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
   footer .footer-content .company {
+    max-width: 150px;
     margin-bottom: 50px;
   }
 }
@@ -732,8 +738,9 @@ footer .footer-content .support {
   max-width: 197px;
   width: 100%;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
   footer .footer-content .support {
+    max-width: 150px;
     margin-bottom: 50px;
   }
 }
@@ -741,8 +748,9 @@ footer .footer-content .follow {
   max-width: 197px;
   width: 100%;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
   footer .footer-content .follow {
+    max-width: 150px;
     margin-bottom: 50px;
   }
 }
@@ -755,7 +763,11 @@ footer h4 {
   color: #000000;
   margin-bottom: 19px;
 }
-footer a {
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer ul a {
   display: block;
   font-family: "Inter";
   font-style: normal;
@@ -767,10 +779,15 @@ footer a {
   text-decoration: none;
   transition: 0.3s;
 }
-footer a:hover {
+footer ul a:hover {
   color: black;
   transform: scale(1.1);
   text-decoration: none;
+}
+@media screen and (max-width: 428px) {
+  footer .made {
+    display: block;
+  }
 }
 footer .made a {
   font-family: "Inter";
