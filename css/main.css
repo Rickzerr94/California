@@ -97,6 +97,7 @@ header .container .navbar .header_icon li {
   line-height: 70px;
   color: #000000;
   margin-bottom: 19px;
+  text-align: start;
 }
 .new_phones .container .carousel-inner .carousel-item p {
   font-family: "Inter";
@@ -540,6 +541,7 @@ header .container .navbar .header_icon li {
   margin-bottom: 28px;
 }
 .place a {
+  display: inline-block;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -547,11 +549,16 @@ header .container .navbar .header_icon li {
   line-height: 29px;
   text-transform: capitalize;
   color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
 }
 .place a:after {
   content: url("../img/ARROW.svg");
   position: relative;
   top: 6px;
+}
+.place a:hover {
+  transform: scale(1.2);
 }
 
 .looking {

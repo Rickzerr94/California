@@ -108,6 +108,7 @@ header{
           line-height: 70px;
           color: #000000;
           margin-bottom: 19px;
+          text-align: start;
         }
         p{
           font-family: 'Inter';
@@ -539,6 +540,7 @@ header{
     }
   }
   a{
+    display: inline-block;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -546,10 +548,15 @@ header{
     line-height: 29px;
     text-transform: capitalize;
     color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
     &:after{
       content: url("../img/ARROW.svg");
       position: relative;
       top: 6px;
+    }
+    &:hover{
+      transform: scale(1.2);
     }
   }
 }
