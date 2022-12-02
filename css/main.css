@@ -775,7 +775,7 @@ footer ul {
   padding-left: 0;
 }
 footer ul a {
-  display: block;
+  display: inline-block;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
